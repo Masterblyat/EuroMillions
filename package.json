@@ -1,0 +1,30 @@
+{
+  "name": "euromillions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Masterblyat/EuroMillions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Masterblyat/EuroMillions/issues"
+  },
+  "homepage": "https://github.com/Masterblyat/EuroMillions#readme",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^22.10.7",
+    "axios": "^1.7.9",
+    "chartjs-node-canvas": "^4.1.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
