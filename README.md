@@ -43,6 +43,11 @@ Generates two bar charts:
 - frequency_chart_stars.png → Shows the frequency of drawn stars.
 
 ## 🏃‍♂️ Running the Project
+Build the project
+```bash
+npm run build
+```
+
 Run the analysis and generate charts
 
 ```bash
