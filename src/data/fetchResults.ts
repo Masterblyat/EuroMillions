@@ -14,9 +14,7 @@ export function deleteOldFile(filePath: string) {
     }
 }
 
-export async function fetchAndSaveResults() {
-    const filePath = path.join(__dirname, 'result.json'); 
-
+export async function fetchAndSaveResults(filePath: string) {
     try {
         const response = await axios.get('https://euromillions.api.pedromealha.dev/draws', {
             headers: { 'accept': 'application/json' }
@@ -24,7 +22,7 @@ export async function fetchAndSaveResults() {
         const draws = response.data;
 
         fs.writeFileSync(filePath, JSON.stringify(draws, null, 2));
-        console.log('Results have been stored in result.json');
+        console.log(`Results have been stored in ${filePath}`);
     } catch (error) {
         console.error('Error while retrieving or saving the data:', error);
     }

@@ -18,7 +18,7 @@ async function main() {
         }
 
         // Step 2: Download the new results
-        await fetchAndSaveResults();
+        await fetchAndSaveResults(filePath);
         console.log('New results downloaded and saved.');
 
         // Step 3: Read and transform the data
